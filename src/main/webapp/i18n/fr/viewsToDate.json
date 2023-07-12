@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "viewsToDate": {
+      "home": {
+        "title": "ViewsToDates",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Views To Date",
+        "createOrEditLabel": "Créer ou éditer un Views To Date",
+        "notFound": "Aucun Views To Date trouvé"
+      },
+      "created": "Un nouveau Views To Date a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Views To Date avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Views To Date avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Views To Date {{ id }} ?"
+      },
+      "detail": {
+        "title": "Views To Date"
+      },
+      "id": "ID",
+      "date": "Date",
+      "views": "Views"
+    }
+  }
+}

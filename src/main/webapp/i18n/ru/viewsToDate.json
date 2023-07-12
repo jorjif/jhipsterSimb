@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "viewsToDate": {
+      "home": {
+        "title": "Views To Dates",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Views To Date",
+        "createOrEditLabel": "Создать или отредактировать Views To Date",
+        "notFound": "Views To Dates не найдено"
+      },
+      "created": "Новый Views To Date создан с идентификатором {{ param }}",
+      "updated": "Views To Date обновлен с идентификатором {{ param }}",
+      "deleted": "Views To Date удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Views To Date {{ id }}?"
+      },
+      "detail": {
+        "title": "Views To Date"
+      },
+      "id": "ID",
+      "date": "Date",
+      "views": "Views"
+    }
+  }
+}

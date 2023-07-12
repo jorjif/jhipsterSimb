@@ -1,0 +1,28 @@
+{
+  "jhipsterApp": {
+    "posts": {
+      "home": {
+        "title": "Posts",
+        "refreshListLabel": "Обновить список",
+        "createLabel": "Создать новый Posts",
+        "createOrEditLabel": "Создать или отредактировать Posts",
+        "notFound": "Posts не найдено"
+      },
+      "created": "Новый Posts создан с идентификатором {{ param }}",
+      "updated": "Posts обновлен с идентификатором {{ param }}",
+      "deleted": "Posts удален с идентификатором {{ param }}",
+      "delete": {
+        "question": "Вы уверены что хотите удалить Posts {{ id }}?"
+      },
+      "detail": {
+        "title": "Posts"
+      },
+      "id": "ID",
+      "title": "Title",
+      "content": "Content",
+      "date": "Date",
+      "views": "Views",
+      "img": "Img"
+    }
+  }
+}

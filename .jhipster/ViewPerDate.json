@@ -1,0 +1,20 @@
+{
+  "applications": ["jhipster"],
+  "changelogDate": "20230712075722",
+  "entityTableName": "view_per_date",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "views",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "ViewPerDate",
+  "relationships": [],
+  "searchEngine": "no"
+}

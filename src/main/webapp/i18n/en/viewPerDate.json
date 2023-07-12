@@ -1,0 +1,25 @@
+{
+  "jhipsterApp": {
+    "viewPerDate": {
+      "home": {
+        "title": "View Per Dates",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new View Per Date",
+        "createOrEditLabel": "Create or edit a View Per Date",
+        "notFound": "No View Per Dates found"
+      },
+      "created": "A new View Per Date is created with identifier {{ param }}",
+      "updated": "A View Per Date is updated with identifier {{ param }}",
+      "deleted": "A View Per Date is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete View Per Date {{ id }}?"
+      },
+      "detail": {
+        "title": "View Per Date"
+      },
+      "id": "ID",
+      "date": "Date",
+      "views": "Views"
+    }
+  }
+}

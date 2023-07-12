@@ -1,0 +1,20 @@
+{
+  "applications": "*",
+  "changelogDate": "20230712112157",
+  "entityTableName": "views_to_date",
+  "fields": [
+    {
+      "fieldName": "date",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "views",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "name": "ViewsToDate",
+  "relationships": [],
+  "searchEngine": "no"
+}
