@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Typography } from 'antd';
+import { Row, Col, Typography, Card } from 'antd';
 import { TextFormat, byteSize } from 'react-jhipster';
 import { APP_DATE_FORMAT } from 'app/config/constants';
 const { Text, Title } = Typography;
@@ -14,7 +14,7 @@ interface IProps {
 
 export const Post = ({ title, content, date, img, views, imgContentType }: IProps) => {
   return (
-    <div>
+    <Card>
       <Row align="top">
         <Col span={6}>{img ? <div>{imgContentType ? <img src={`data:${imgContentType};base64,${img}`} /> : null}</div> : null}</Col>
         <Col span={18}>
@@ -40,6 +40,6 @@ export const Post = ({ title, content, date, img, views, imgContentType }: IProp
           <Text type="secondary">просмотры: {views}</Text>
         </Col>
       </Row>
-    </div>
+    </Card>
   );
 };

@@ -41,3 +41,13 @@ export const Posts = () => (
     </NavLink>
   </NavItem>
 );
+
+export const Chart = () => (
+  <NavItem>
+    <NavLink tag={Link} to="/chart" className="d-flex align-items-center">
+      <span>
+        <Translate contentKey="global.menu.chart">Чарты</Translate>
+      </span>
+    </NavLink>
+  </NavItem>
+);
