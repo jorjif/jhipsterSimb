@@ -1,18 +1,30 @@
+import { Row, Col, Typography } from 'antd';
 import './footer.scss';
 
 import React from 'react';
-import { Translate } from 'react-jhipster';
-import { Col, Row } from 'reactstrap';
+
+const { Text } = Typography;
 
 const Footer = () => (
   <div className="footer page-content">
-    <Row>
-      <Col md="12">
-        <p>
-          <Translate contentKey="footer">Your footer</Translate>
-        </p>
-      </Col>
-    </Row>
+    <div>
+      <Row justify="space-between">
+        <Col span={4}>
+          <Text type="secondary">Правовая инфрмация</Text>
+        </Col>
+        <Col span={4}>
+          <Text type="secondary">О нас</Text>
+        </Col>
+      </Row>
+      <Row justify="space-between">
+        <Col span={4}>
+          <Text type="secondary">Партнерам</Text>
+        </Col>
+        <Col span={4}>
+          <Text type="secondary">Пользователям</Text>
+        </Col>
+      </Row>
+    </div>
   </div>
 );
 

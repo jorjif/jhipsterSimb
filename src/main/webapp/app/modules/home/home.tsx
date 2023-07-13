@@ -1,99 +1,37 @@
 import './home.scss';
 
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Translate } from 'react-jhipster';
-import { Row, Col, Alert } from 'reactstrap';
-
-import { useAppSelector } from 'app/config/store';
+import Title from 'antd/es/typography/Title';
+import Paragraph from 'antd/es/typography/Paragraph';
 
 export const Home = () => {
-  const account = useAppSelector(state => state.authentication.account);
+  // const account = useAppSelector(state => state.authentication.account);
 
   return (
-    <Row>
-      <Col md="3" className="pad">
-        <span className="hipster rounded" />
-      </Col>
-      <Col md="9">
-        <h2>
-          <Translate contentKey="home.title">Welcome, Java Hipster!</Translate>
-        </h2>
-        <p className="lead">
-          <Translate contentKey="home.subtitle">This is your homepage</Translate>
-        </p>
-        {account?.login ? (
-          <div>
-            <Alert color="success">
-              <Translate contentKey="home.logged.message" interpolate={{ username: account.login }}>
-                You are logged in as user {account.login}.
-              </Translate>
-            </Alert>
-          </div>
-        ) : (
-          <div>
-            <Alert color="warning">
-              <Translate contentKey="global.messages.info.authenticated.prefix">If you want to </Translate>
-
-              <Link to="/login" className="alert-link">
-                <Translate contentKey="global.messages.info.authenticated.link"> sign in</Translate>
-              </Link>
-              <Translate contentKey="global.messages.info.authenticated.suffix">
-                , you can try the default accounts:
-                <br />- Administrator (login=&quot;admin&quot; and password=&quot;admin&quot;)
-                <br />- User (login=&quot;user&quot; and password=&quot;user&quot;).
-              </Translate>
-            </Alert>
-
-            <Alert color="warning">
-              <Translate contentKey="global.messages.info.register.noaccount">You do not have an account yet?</Translate>&nbsp;
-              <Link to="/account/register" className="alert-link">
-                <Translate contentKey="global.messages.info.register.link">Register a new account</Translate>
-              </Link>
-            </Alert>
-          </div>
-        )}
-        <p>
-          <Translate contentKey="home.question">If you have any question on JHipster:</Translate>
-        </p>
-
-        <ul>
-          <li>
-            <a href="https://www.jhipster.tech/" target="_blank" rel="noopener noreferrer">
-              <Translate contentKey="home.link.homepage">JHipster homepage</Translate>
-            </a>
-          </li>
-          <li>
-            <a href="https://stackoverflow.com/tags/jhipster/info" target="_blank" rel="noopener noreferrer">
-              <Translate contentKey="home.link.stackoverflow">JHipster on Stack Overflow</Translate>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/jhipster/generator-jhipster/issues?state=open" target="_blank" rel="noopener noreferrer">
-              <Translate contentKey="home.link.bugtracker">JHipster bug tracker</Translate>
-            </a>
-          </li>
-          <li>
-            <a href="https://gitter.im/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-              <Translate contentKey="home.link.chat">JHipster public chat room</Translate>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com/jhipster" target="_blank" rel="noopener noreferrer">
-              <Translate contentKey="home.link.follow">follow @jhipster on Twitter</Translate>
-            </a>
-          </li>
-        </ul>
-
-        <p>
-          <Translate contentKey="home.like">If you like JHipster, do not forget to give us a star on</Translate>{' '}
-          <a href="https://github.com/jhipster/generator-jhipster" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-          !
-        </p>
-      </Col>
-    </Row>
+    <div>
+      <Title>Добро пожаловать на тестовый проект на jhipster</Title>
+      <Paragraph>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sequi, ipsa dolorem expedita possimus facere commodi soluta placeat
+        vitae amet voluptate nihil, fugit magni at asperiores dolores cumque. Vitae cum beatae nisi error quaerat voluptas, harum maxime
+        aliquid quis illo eum dignissimos architecto rem id eos excepturi. Possimus, sunt. Quis.
+      </Paragraph>
+      <Paragraph>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos officia iste, minima recusandae, quia delectus numquam
+        doloremque expedita eos, temporibus voluptatum at. Quis, illo suscipit doloremque dolor temporibus inventore perferendis nam
+        explicabo illum omnis odit pariatur excepturi dolorem tempora modi aliquid fuga nihil. Totam aspernatur cumque quaerat optio laborum
+        qui commodi veniam eum in, non ab, beatae nemo fugit saepe harum inventore! Eaque, tenetur aliquid enim placeat accusantium sit
+        ullam, optio ipsa ab totam labore in ea quaerat ducimus nihil quidem praesentium?
+      </Paragraph>
+      <Paragraph>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam cupiditate nemo nostrum eum numquam ullam neque quos consequuntur
+        laudantium enim ratione molestiae voluptatibus magni nihil, corporis quod molestias eligendi, maiores natus illo officia, maxime ab
+        nobis? Blanditiis at impedit, facilis dolore quisquam tenetur velit exercitationem accusantium, iure esse incidunt! Quidem cum, esse
+        officiis omnis autem aliquid voluptate corporis nisi cupiditate sed alias dolorem doloremque, perferendis soluta delectus dolor nemo
+        quas quo ex doloribus voluptates, explicabo quis! Odit cum, corporis officiis pariatur culpa sint maxime, exercitationem quibusdam
+        dolorem nobis, non voluptate assumenda maiores velit quis deleniti vel ipsam magni. A dolorem tempora illo neque, excepturi, non
+        dolorum fuga quas perspiciatis doloremque consequatur? Optio qui inventore quibusdam molestiae a eum reprehenderit voluptatem!
+      </Paragraph>
+    </div>
   );
 };
 

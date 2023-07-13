@@ -16,7 +16,7 @@
     "enableHibernateCache": true,
     "enableSwaggerCodegen": false,
     "enableTranslation": true,
-    "entities": [],
+    "entities": ["Post", "ViewPerDate", "ViewsToDate", "Posts"],
     "entitySuffix": "",
     "gradleEnterpriseHost": null,
     "jhiPrefix": "jhi",

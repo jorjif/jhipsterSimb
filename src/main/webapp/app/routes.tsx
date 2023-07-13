@@ -14,6 +14,8 @@ import PrivateRoute from 'app/shared/auth/private-route';
 import ErrorBoundaryRoutes from 'app/shared/error/error-boundary-routes';
 import PageNotFound from 'app/shared/error/page-not-found';
 import { AUTHORITIES } from 'app/config/constants';
+import { PostsList } from './modules/postsList/postsList';
+import { Chart } from './modules/stats/stats';
 
 const loading = <div>loading ...</div>;
 
@@ -34,6 +36,8 @@ const AppRoutes = () => {
         <Route index element={<Home />} />
         <Route path="login" element={<Login />} />
         <Route path="logout" element={<Logout />} />
+        <Route path="postsList" element={<PostsList />} />
+        <Route path="chart" element={<Chart />} />
         <Route path="account">
           <Route
             path="*"
